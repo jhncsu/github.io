@@ -1,0 +1,35 @@
+
+---
+title: "A Bayesian Introduction to Fish Population Analysis"
+author: "Joseph E. Hightower"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
+bibliography: [My Library.bib, packages.bib]
+csl: american-fisheries-society.csl
+link-citations: yes
+---
+
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
+
+# Welcome {-}
+
+Welcome to my online book *A Bayesian Introduction to Fish Population Analysis*.  This is based in large part on material I developed while teaching (1991-2014) at NC State University. My hope is that the book will be a bridge between traditional fisheries analtytical methods and Bayesian approaches that offer many advantages in ecological modeling. The book might be useful as an upper-level undergraduate or early graduate text, or for a working fisheries biologist interested in a hands-on introduction to Bayesian methods. The format for the book follows that used in an excellent collection of books by Marc Kéry and colleagues; for example, @kéry.schaub_2011. I have benefited greatly from working through their material, but any errors are mine. I welcome *constructive* feedback so please contact me (email: jhightower@ncsu.edu) if you encounter errors or just see something that could be written more clearly.
+
+![Goode 1887](https://digitalcollections.lib.washington.edu/digital/iiif/fishimages/45872/full/full/0/default.jpg)
+
+
+# Preface {-}
+
+This book has been prepared using the **bookdown** package [@R-bookdown]. Bold text will indicate a package name (e.g., **rmarkdown**); typewriter font will indicate inline code (e.g., `x^y`) or a function name (followed by parentheses, e.g., <code>mean()</code>).
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'rjags', 'R2jags', 'coda'
+), 'packages.bib')
+```
